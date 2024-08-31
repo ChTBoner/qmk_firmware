@@ -18,12 +18,13 @@
 
 // clang-format off
 
-// enum layers{
-//     MAC_BASE,
-//     MAC_FN,
-//     WIN_BASE,
-//     WIN_FN
-// };
+enum layers{
+    MAC_BASE,
+    MAC_FN,
+    WIN_BASE,
+    WIN_FN,
+    ARSENIK
+};
 
 #define KC_TASK LGUI(KC_TAB)
 #define KC_FLXP LGUI(KC_E)
@@ -78,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [ARSENIK] = LAYOUT_iso_90(
         _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,            _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,            _______,
-        _______,  _______,  KC_TAB,   KC_HOME,  KC_UP,    KC_END,   KC_PGUP,   KC_PSLS,  KC_7,     KC_8,     KC_9,     _______,  _______,   _______,  _______,
+        _______,  _______,  KC_TAB,   KC_HOME,  KC_UP,    KC_END,   KC_PGUP,   KC_PSLS,  KC_7,     KC_8,     KC_9,     _______,  _______,   _______,
         _______,  _______,  KC_CAPS,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,   KP_MIN,   KC_4,     KC_5,     KC_6,     KC_0,     _______,   _______,  _______,            _______,
         _______,  _______,  _______,  KC_VOLD,  KC_MUTE,  KC_VOLU,  S(KC_TAB), KC_COMM,  KC_1,     KC_2,     KC_3,     KC_DOT,   _______,   _______,  _______,  _______,  _______,
         _______,  _______,  _______,            KC_DEL,   _______,  _______,                       _______,            KC_ESC,                       _______,       _______,  _______),
@@ -89,6 +90,8 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [MAC_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [MAC_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
     [WIN_BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-    [WIN_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }
+    [WIN_FN]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
+    [ARSENIK]   = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }
+
 };
 #endif // ENCODER_MAP_ENABLE
