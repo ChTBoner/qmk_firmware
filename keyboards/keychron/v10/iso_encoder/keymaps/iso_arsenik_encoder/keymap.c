@@ -73,16 +73,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  RGB_TOG,  RGB_MOD,  RGB_VAI,  RGB_HUI,  RGB_SAI,  RGB_SPI,   RGB_RMOD, RGB_VAD,  RGB_HUD,  RGB_SAD,  RGB_SPD,  _______,   NK_TOGG,  _______,            _______,
         _______,  _______,  _______,  C(KC_W),  KC_WBAK,  KC_WFWD,  _______,   KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,   _______,  _______,   _______,                      _______,
         _______,  KC_CAPS,  C(KC_A),  C(KC_S),  S(KC_TAB), KC_TAB,  _______,   KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  _______,  _______,   _______,  _______,            _______,
-        _______,  _______,  KC_UNDO,  KC_CUT,   KC_COPY,  KC_PSTE,  _______,   MS_WHLL,  MS_WHLD,  MS_WHLU,  MS_WHLR,  _______,  _______,   _______,  _______,  _______,
+        _______,  _______,  KC_UNDO,  KC_CUT,   KC_COPY,  KC_PSTE,  _______,   _______,  _______,  MS_WHLL,  MS_WHLD,  MS_WHLU,  MS_WHLR,     _______,  _______,  _______,
         _______,  _______,  _______,            _______,  _______,  _______,                       _______,            KC_ESC,                        _______,  _______,  _______),
 
     [ARSENIK] = LAYOUT_iso_90(
         _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,            _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______,            _______,
-        _______,  _______,  KC_TAB,   KC_HOME,  KC_UP,    KC_END,   KC_PGUP,   KC_PSLS,  KC_7,     KC_8,     KC_9,     _______,  _______,   _______,
-        _______,  _______,  KC_CAPS,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,   KP_MIN,   KC_4,     KC_5,     KC_6,     KC_0,     _______,   _______,  _______,            _______,
-        _______,  _______,  _______,  KC_VOLD,  KC_MUTE,  KC_VOLU,  S(KC_TAB), KC_COMM,  KC_1,     KC_2,     KC_3,     KC_DOT,   _______,   _______,  _______,  _______,  _______,
-        _______,  _______,  _______,            KC_DEL,   _______,  _______,                       _______,            KC_ESC,                       _______,       _______,  _______),
+        _______,  _______,  KC_TAB,   KC_HOME,  KC_UP,    KC_END,   KC_PGUP,   KC_PSLS,  KC_7,     KC_8,     KC_9,     _______,  _______,   _______,                      _______,
+        _______,  _______,  KC_CAPS,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,   KP_MIN,   KC_4,     KC_5,     KC_6,     KC_0,     _______,  _______,            _______,  _______,
+        _______,  _______,  _______,  KC_VOLD,  KC_MUTE,  KC_VOLU,  _______,  _______,   S(KC_TAB), KC_COMM,  KC_1,     KC_2,     KC_3,     KC_DOT,     _______,  _______,
+        _______,  _______,  _______,            KC_DEL,   _______,  _______,                       _______,            KC_ESC,                     _______,        _______, _______),
 };
 
 #if defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
