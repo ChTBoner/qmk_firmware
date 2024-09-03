@@ -19,9 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* period of tapping(ms) */
 #ifndef TAPPING_TERM
-#    define TAPPING_TERM 200
-#endif
-
+#    define     TAPPING_TERM 200
+#endif  
 /* period of quick tap(ms) */
 #if !defined(QUICK_TAP_TERM) || QUICK_TAP_TERM > TAPPING_TERM
 #    define QUICK_TAP_TERM TAPPING_TERM
