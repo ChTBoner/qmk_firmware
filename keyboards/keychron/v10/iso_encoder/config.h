@@ -21,3 +21,19 @@
 
 /* Enable caps-lock LED */
 #define CAPS_LOCK_LED_INDEX 47
+
+#define PERMISSIVE_HOLD
+
+
+
+#define CTL_ESC RCTL_T(KC_ESC)
+
+#define LSFT_A LSFT_T(KC_A)
+#define LCTL_X LCTL_T(KC_X)
+#define LALT_C LALT_T(KC_C)
+#define LALTCO LALT_T(KC_COMM)
+#define LCTLDO RCTL_T(KC_DOT)
+#define LSFSCL LSFT_T(KC_SCLN)
+#define LSFBSP LSFT_T(KC_BSPC)
+#define RAL_SL RALT_T(KC_SLSH)
+#define RALT_Z RALT_T(KC_Z)

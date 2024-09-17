@@ -31,5 +31,6 @@
     "clangd.arguments": [
         "--header-insertion=never"
     ],
-    "makefile.configureOnOpen": false
+    "makefile.configureOnOpen": false,
+    "cmake.sourceDirectory": "/home/thibault/qmk_firmware/lib/pico-sdk/src/common"
 }
